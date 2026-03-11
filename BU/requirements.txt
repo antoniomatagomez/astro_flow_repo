@@ -1,0 +1,28 @@
+
+# VaultSpeed FMC plugin: the zip doesn't ship dependencies, so install from zip to get
+# them (install_requires / [all] extras). Place vs_fmc_plugin.zip in project root.
+./vs_fmc_plugin.zip[all]
+
+# Add any other Python dependencies your DAGs or plugins need below.
+
+# VaultSpeed FMC Plugin dependencies
+croniter>=0.3
+flask_admin>=1.5.8
+flask_appbuilder
+flask_babel
+
+# Snowflake connector (required for snowflake_hook.py)
+snowflake-connector-python>=3.6.0
+
+# Cryptography (required for private key authentication)
+cryptography
+
+# Databricks provider (required for databricks_hook.py and databricks_operator.py)
+apache-airflow-providers-databricks
+apache-airflow-providers-snowflake
+
+# JDBC provider (required for jdbc_hook.py and jdbc_operator.py)
+apache-airflow-providers-jdbc
+
+# JayDeBeApi (required for singlestore_hook.py and jdbc connections)
+jaydebeapi
