@@ -1,4 +1,0 @@
-{
-	"databricks_file_extension": ".sql",
-	"path_to_metadata": "/opt/airflow/dags"
-}
