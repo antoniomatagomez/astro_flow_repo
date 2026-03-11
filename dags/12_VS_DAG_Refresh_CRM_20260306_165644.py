@@ -18,7 +18,7 @@ from pathlib import Path
 import json
 import ast
 
-from airflow.providers.standard.operators.empty import EmptyOperator
+from airflow.providers.standard.operators.empty import EmptyOperator 
 from vaultspeed_provider.operators.databricks_operator import VSDatabricksSubmitRunOperator
 
 
