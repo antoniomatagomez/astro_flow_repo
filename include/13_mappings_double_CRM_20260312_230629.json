@@ -1,0 +1,5 @@
+{
+	"Current_State_Customer" : {"dependencies": ["START"], "map_schema": "`dimtest_proc`", "original_name": "crm_current_state_customer", "input":[], "component_type":"physical_mapping_comp", "trigger_rule":"one_success"},
+	"Current_State_Customer_1" : {"dependencies": ["Current_State_Customer"], "map_schema": "`dimtest_proc`", "original_name": "crm_current_state_customer", "input":[], "component_type":"physical_mapping_comp", "trigger_rule":"one_success"},
+	"Enrich_Customer" : {"dependencies": ["Current_State_Customer_1"], "map_schema": "`dimtest_proc`", "original_name": "crm_enrich_customer", "input":[], "component_type":"physical_mapping_comp", "trigger_rule":"one_success"}
+}
