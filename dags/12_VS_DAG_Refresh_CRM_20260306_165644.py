@@ -28,7 +28,7 @@ default_args = {
 
 
 path_to_mtd = Path(Variable.get("path_to_metadata"))
-path_to_mtd = Path(__file__).parent
+# path_to_mtd = Path(__file__).parent
 
 
 with open(path_to_mtd / "12_mappings_Refresh_CRM_20260306_165644.json") as file: 
